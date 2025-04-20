@@ -1,13 +1,21 @@
-// Random Number Generator 
+// If statement Practice
+const visaBtn = document.getElementById("visaBtn");
+const mastercardBtn = document.getElementById("mastercardBtn");
+const paypalBtn = document.getElementById("paypalBtn");
+const mySubmit = document.getElementById("mySubmit");
+const paymentResult = document.getElementById("paymentResult");
+const checkboxResult = document.getElementById("checkboxResult");
 
-const roll = document.getElementById("rollBtn");
-const output = document.getElementById("userResult");
+document.getElementById("mySubmit").onclick = function() {
+    if(visaBtn.checked) {
+        checkboxResult.textContent = `You chose Visa.`
+    }
 
-const min = 50;
-const max = 100;
-let randomNum;
+    if(mastercardBtn.checked) {
+        paymentResult.textContent = `You chose MasterCard.`
+    }
 
-roll.onclick = function(){
-    randomNum = Math.floor(Math.random() * (max - min)) + min;    
-    output.textContent = randomNum;
+    if(paypalBtn.checked) {
+        paymentResult.textContent = `You chose PayPal.`
+    }
 }
