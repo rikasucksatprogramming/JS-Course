@@ -1,22 +1,37 @@
-// string splicing = creating a substring from a portion of another string
-// I don't see how useful this is..
-const fullName = "Eugene Cruz";
+// = asignment operator 
+// == comparison operator (comapre if two values are equal)
+// === strict equality operator (compare if values & datatypes are equal)
+// != inequality operator // return true if 2 values are not equal
+// !== strict inequality operator
 
-let firstName = fullName.slice(0, 3);
-let lastName = fullName.slice(7, 11);
-console.log(lastName)
+const PI = 3.14;
 
-console.log(firstName);
+if(PI == "3.14"){
+   console.log("That is pi");
+}
+else{
+   console.log("That is not pi");
+}
 
-let nameFirst = fullName.slice(0,fullName.indexOf(" "));
-console.log(nameFirst);
+// Strict equality Operator would result in not pi because you are comparing a number to a string 
+if(PI === "3.14"){
+   console.log("That is pi");
+}
+else{
+   console.log("That is not pi");
+}
+// inequality operator will basically asks if PI is not equal to 3.14
+if(PI != "3.14"){
+   console.log("That is not pi");
+}
+else{
+   console.log("That is pi");
+}
 
-// Example 
-
-const email = "example@example.com";
-
-let username = email.slice(0, email.indexOf("@"));
-let extension = email.slice(email.indexOf("@"));
-console.log(username);
-console.log(extension);
-
+// Strict inequality sting comparison
+if(PI !== "3.14"){
+   console.log("That is not pi");
+}
+else{
+   console.log("That is pi");
+}
