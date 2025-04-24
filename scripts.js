@@ -1,37 +1,31 @@
-// = asignment operator 
-// == comparison operator (comapre if two values are equal)
-// === strict equality operator (compare if values & datatypes are equal)
-// != inequality operator // return true if 2 values are not equal
-// !== strict inequality operator
-
-const PI = 3.14;
-
-if(PI == "3.14"){
-   console.log("That is pi");
-}
-else{
-   console.log("That is not pi");
+// for loop = will repeat code for a limited amount of time 
+// I = index(used for counter) declares how many times the loop will run(3 times) i ++ everytime the loop is run add one to the counter but stop when it gets to 3 
+/*
+for(let i = 10; i > 0; i-=2){
+   console.log(i);
 }
 
-// Strict equality Operator would result in not pi because you are comparing a number to a string 
-if(PI === "3.14"){
-   console.log("That is pi");
-}
-else{
-   console.log("That is not pi");
-}
-// inequality operator will basically asks if PI is not equal to 3.14
-if(PI != "3.14"){
-   console.log("That is not pi");
-}
-else{
-   console.log("That is pi");
+console.log("Happy new year!");
+*/
+
+// Allows you to skip an iteration 
+for(let i = 1; i <= 20; i++){
+   if(i == 13){
+      continue;
+   }
+   else{
+      console.log(i);
+   }
+   console.log(i);
 }
 
-// Strict inequality sting comparison
-if(PI !== "3.14"){
-   console.log("That is not pi");
-}
-else{
-   console.log("That is pi");
+for(let e = 1; e <= 20; e++){
+   if(e == 13){
+      break;
+      // exits the loop entirely
+   }
+   else{
+      console.log(e);
+   }
+   console.log(e);
 }
