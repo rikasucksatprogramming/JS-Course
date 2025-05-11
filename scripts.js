@@ -1,31 +1,51 @@
-// for loop = will repeat code for a limited amount of time 
-// I = index(used for counter) declares how many times the loop will run(3 times) i ++ everytime the loop is run add one to the counter but stop when it gets to 3 
-/*
-for(let i = 10; i > 0; i-=2){
-   console.log(i);
+// functions = a seclection of resusable code 
+            // Declare code once, use it whenever you want.
+            // Call the function to execute the code
+
+/*function happyBirthday(username, age){
+   console.log("Happy birthday to you");
+   console.log("Happy birthday to you");
+   console.log(`Happy birthday dear ${username}!`);
+   console.log(`You are ${age} years old!`);
 }
 
-console.log("Happy new year!");
+happyBirthday("Ricky", 15);
+happyBirthday("Spongbob", 30);
+happyBirthday("Patrick", 37);
 */
+function add(x , y){
+   let result = x +y;
+   return result;
 
-// Allows you to skip an iteration 
-for(let i = 1; i <= 20; i++){
-   if(i == 13){
-      continue;
-   }
-   else{
-      console.log(i);
-   }
-   console.log(i);
 }
 
-for(let e = 1; e <= 20; e++){
-   if(e == 13){
-      break;
-      // exits the loop entirely
+function sub(x,y){
+   return x -y 
+}
+function multi(x,y){
+   return x*y;
+}
+function divide(x,y){
+   return x / y;
+}
+let answer = divide(2,3);
+console.log(answer);
+
+function isEven(number){
+   if(number % 2 === 0){
+      return true; 
    }
    else{
-      console.log(e);
+      return false;
    }
-   console.log(e);
 }
+
+function isvalidEmail(email){
+   if(email.includes("@")){
+      return true;
+}
+   else{
+      return false;
+   }
+}
+console.log(isvalidEmail("r.mayama"))
